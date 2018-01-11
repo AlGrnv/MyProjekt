@@ -534,31 +534,124 @@ label.btnb:after {
 
 #tab_wt1 .t-p-i1 li,
 #tab-wb1 .b-p-i1 li {
+    position: relative;
     display: inline-block;
-   margin-top: 3%;
-
-    margin-left: 5%;
     list-style: none;
-
+    text-transform: uppercase;
+}
+#tab_wt1 .t-p-i1 .item-link1 div,
+#tab_wt1 .t-p-i1 .item-link2 div,
+#tab_wt1 .t-p-i1 .item-link3 div,
+#tab_wt1 .t-p-i1 .item-link4 div,
+#tab_wt1 .t-p-i1 .item-link5 div {
+    position: relative;
+    width: 94px;
+    height: 94px;
+    margin-top: 0;
+    padding: 0 0;
+}
+#tab_wt1 .t-p-i1  a {
+    position: relative;
+}
+#tab_wt1  a .item-s-t,
+#tab_wt1  a .item-s-b {
+    position: relative;
 }
 
-#tab_wt1 .t-p-i1 .item-link1 {
-    position: relative;
-    top: 3px;
-    padding: 22px 16px;
-    border: 1px solid rgba(91,91,91,1);
+#tab_wt1 .t-p-i1 .item-link1  {
+
+    top: -5px;
+    padding: 0 0;
+    border: 6px solid rgba(91,91,91,1);
     border-radius: 50%;
+    line-height: 1.5;
+    margin-top: 0;
+}
+#tab_wt1 .item-link1 a {
+    top: 34px;
 }
 
-/*#tab_wt1 .t-p-i1 .item-link1 a {*/
-    /*position: absolute;*/
-    /*top: 0;*/
-/*}*/
+#tab_wt1 .t-p-i1 .item-link2  {
 
-#tab_wt1 .t-p-i1 .item-link2 {
-    position: relative;
-    top: 7px;
+    top: -5px;
+    padding: 0 0;
+    border: 6px solid rgba(91,91,91,1);
+    border-radius: 50%;
+    line-height: 1.5;
+    margin-top: 0;
+
 }
+
+#tab_wt1 .item-link2 a {
+    top: 34px;
+}
+
+#tab_wt1 .t-p-i1 .item-link3  {
+
+    top: 20px;
+    padding: 0 0;
+    border: 6px solid rgba(91,91,91,1);
+    border-radius: 50%;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+#tab_wt1 .item-link3 a {
+    top: 21px;
+}
+#tab_wt1 .item-link3 a .item-s-t {
+    top: 2px;
+
+}
+#tab_wt1 .item-link3 a .item-s-b {
+    bottom: 2px;
+
+}
+#tab_wt1 .t-p-i1 .item-link4  {
+
+    top: 20px;
+    padding: 0 0;
+    border: 6px solid rgba(91,91,91,1);
+    border-radius: 50%;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+#tab_wt1 .item-link4 a {
+    top: 24px;
+}
+#tab_wt1 .item-link4 a .item-s-t {
+    top: 2px;
+
+}
+#tab_wt1 .item-link4 a .item-s-b {
+    bottom: 2px;
+
+}
+#tab_wt1 .t-p-i1 .item-link5  {
+
+    top: 20px;
+    padding: 0 0;
+    border: 6px solid rgba(91,91,91,1);
+    border-radius: 50%;
+    line-height: 1.5;
+    margin-top: 0;
+
+}
+
+#tab_wt1 .item-link5 a {
+    top: 24px;
+}
+#tab_wt1 .item-link5 a .item-s-t {
+    top: 2px;
+
+}
+#tab_wt1 .item-link5 a .item-s-b {
+    bottom: 2px;
+
+}
+
+
 
 
 
