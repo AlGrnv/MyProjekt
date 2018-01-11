@@ -1,0 +1,194 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1500px) {
+
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+
+
+
+
+}
+
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+
+
+}
+
+@media only screen and (max-width : 768px) {
+    
+
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	.wrapp {
+		border: none;
+		box-shadow: none;
+		width: 97%;
+	}
+	.panel {
+		position: fixed;
+		left: 100px;
+		top: 100px;
+	}
+
+	.content {
+
+	}
+
+	.slickslid {
+		margin-top: 5px;
+	}
+	.decor-left,
+	.decor-right {
+		height: 1vh;
+	}
+	.decor-right {
+	float: none;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	.wrapp {
+		border: none;
+		box-shadow: none;
+		width: 97%;
+	}
+	.panel  {
+		position: fixed;
+		left: 100px;
+		top: 100px;
+
+	}
+	.content {
+
+	}
+
+	.slickslid {
+		margin-top: 5px;
+	}
+
+	.decor-left,
+	.decor-right {
+		height: 1vh;
+	}
+	.sotial-net {
+		position: absolute;
+		top: 0;
+	}
+	.nav {
+		position: absolute;
+		bottom: 0;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+	.wrapp {
+		border: none;
+		box-shadow: none;
+		width: 97%;
+	}
+	.panel {
+		position: fixed;
+		left: 100px;
+		top: 100px;
+	}
+	.content {
+
+	}
+	.slickslid {
+		margin-top: 5px;
+	}
+
+	.decor-left,
+	.decor-right {
+		height: 1vh;
+	}
+}
+
+
+@media only screen and (min-width: 992px) {
+	.slickslid {
+		margin-top: 45px;
+	}
+	.decor-left,
+	.decor-right {
+		height: 95vh;
+	}
+}
+
+
+@media only screen and (min-width: 1200px) {
+	.decor-left,
+	.decor-right {
+		height: 95vh;
+	}
+
+	.slickslid {
+		margin-top: 40px;
+	}
+
+
+
+
+	.slickslid div img {
+
+		width: 100%;
+		height: auto;
+		box-sizing: border-box;
+
+	}
+
+	.sliditem {
+		padding: 3px;
+		background-color: #2b377d;
+		border-radius: 3px;
+		width: 100%;
+		height: 50px;
+		overflow: auto;
+		border: 1px solid #2b377d;
+		line-height: 1.3;
+		color: #dadada;
+	}
+
+
+}
+
+@media only screen and (min-width: 1500px) {
+	.slickslid {
+		margin-top: 11px;
+	}
+
+
+}
+
+

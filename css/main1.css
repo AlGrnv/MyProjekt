@@ -1,0 +1,455 @@
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+         url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold/RobotoBold.eot");
+    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+         url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900 ;
+}
+@font-face {
+    font-family: "fontawesome-webfont";
+    src: url("../fonts/font-awesome/fontawesome-webfont.eot");
+    src: url("../fonts/font-awesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/font-awesome/fontawesome-webfont.woff") format("woff"),
+         url("../fonts/font-awesome/fontawesome-webfont.ttf") format("truetype"),
+         url("../fonts/font-awesome/fontawesome-webfont.svg#ffontawesome-webfont") format("svg"); 
+font-weight: normal; 
+font-style: normal; 
+}
+
+html {
+	height: 100%;
+	min-height: 100%;
+}
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+::-webkit-scrollbar-button {
+background-image:url('');
+background-repeat:no-repeat;
+width:6px;
+height:0px
+}
+
+::-webkit-scrollbar-track {
+background-color: /*#32312e*/#e2e2e2;
+box-shadow:0px 0px 3px #000 inset;
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 5px;
+border-radius: 5px;
+background-color: #434B1B;
+box-shadow:0px 1px 1px #fff inset;
+/*background-image:url('https://yraaa.ru/_pu/24/59610063.png');*/
+background-position:center;
+background-repeat:no-repeat;
+}
+
+::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:7px;
+height:0px
+}
+
+::-webkit-scrollbar{
+width: 3px;
+}
+
+body {
+	font-family: "RobotoRegular", Sans-Serif;
+	font-size: 16px;
+	position: relative;
+	line-height: 1.6;
+	/*overflow: hidden; */
+    background: #aaa;
+
+
+}
+#content {
+    position: relative;
+    bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    width:  100%;
+    /* height: 84vh; 
+    margin-left: auto;
+    margin-right: auto;*/
+}
+#leftcol, #rightcol {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 98vh;
+    background-color: #fff;
+    margin-top: 0;
+}
+/*общие стили для контейнера шапки и подвала */
+.top-panel, .bottom-panel {
+    background: #39464e;
+    position: fixed;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+    padding: 0;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+/*стили для шапки*/
+.top-panel {
+    top: -150px;
+    transition: top 400ms cubic-bezier(0.17,0.04,0.03,0.94)
+}
+/*стили для подвала #footer*/
+.bottom-panel {
+    bottom: -150px;
+    transition: bottom 400ms cubic-bezier(0.17,0.04,0.03,0.94)
+}
+/*общие стили контента для шепки и подвала*/
+.message {
+    color: #fff;
+    font-weight: 300;
+    position: relative;
+    padding: 3em 2em;
+    margin: 0 auto;
+    /*max-width: 980px*/
+}
+/* Заголовок 1 уровня */
+.message h1 {
+    color: #fff
+}
+/* Заголовок 2 уровня */
+.message h2 {
+    color: #888
+}
+/*общие стили для кнопк шапки и подвала*/
+label.btn, label.butn {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    background: #2bbbad;
+    width: 42px;
+    padding: 7px 5px;
+    color: #FFF;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    transition: all 400ms cubic-bezier(0.17,0.04,0.03,0.94);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+
+}
+/*кнопка для шапки*/
+label.btn {
+    left: 50px;
+    top: 0px;
+     border-radius: 5px ;
+}
+/*кнопка для подвала*/
+label.butn {
+    right: 50px;
+    bottom: 0;
+     border-radius:  5px ;
+}
+
+label.btn:hover,
+label.butn:hover {
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15)
+}
+/* Стрелка переключателя для шапки вниз */
+label.btn:after  {
+    content: '\f078';
+    font: normal 18px/1 FontAwesome;
+    text-decoration: inherit
+}
+/* Стрелка переключателя для подвала вверх */
+label.butn:after {
+    content: '\f077';
+    font: normal 18px/1 FontAwesome
+}
+.open:checked ~ .top-panel   {
+    top: 0;
+
+}
+.open:checked ~ .bottom-panel {
+    bottom: 0
+}
+.open:checked ~ label.btn {
+    top: 150px
+}
+.open:checked ~ label.butn {
+    bottom: 150px
+}
+
+/* Смещение контейнера страницы */
+.open:checked ~ .container {
+    margin-top: 300px
+}
+/* Цвет переключателя при клике */
+.open:checked +  label.btn, 
+.open:checked +  label.butn {
+    background: #dd6149;
+}
+/* Стрелка переключателя для шаки вверх*/
+.open:checked +  label.btn:after  {
+    content: '\f077';
+    font: normal 18px/1 FontAwesome
+}
+/* Стрелка переключателя для подвала вниз*/
+.open:checked + label.butn:after {
+    content: '\f078';
+    font: normal 18px/1 FontAwesome;
+    text-decoration: inherit
+}
+
+
+
+
+
+
+.box-wrap {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    border: 14px solid #337ab7; 
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.box-slider {
+    position: relative;
+   display: block;
+   width: 100%;
+   /* height: 26vh; */
+}
+.slickslid_1, .slickslid_2 {
+    display: block;
+    width: 100%;
+    /*height: 24vh;*/
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.slickslid_1 div img,
+.slickslid_2 div img {
+
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.slicknav_1, .slicknav_2 {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 4px auto 4px auto;
+
+
+}
+
+
+.slicknav_1 .slid, 
+.slicknav_2 .slid {
+    outline: none;
+    margin: 0 7px;
+    border-radius: 3px;
+    /*display: inline-block;  */
+}
+
+.slicknav_1 .slid .sliditem1, 
+.slicknav_2 .slid .sliditem2 {
+    padding: 3px;
+    background-color: #DADADA;
+    border-radius: 3px;
+    width: 102%;
+    height: 15vh;
+    overflow: auto;
+    border: 1px solid #DADADA;
+    /*display: inline-block;*/
+}
+
+.slick-prev:before  {
+    position: absolute;
+    left: 12px;
+}
+.slick-next:before {
+    position: absolute;
+    right: 12px;
+}
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 45%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+/* стили для табов */
+#rightcol .tabs,
+#leftcol .tabs {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 135px;
+    margin: 10px auto 0 auto;
+}
+#rightcol .tabs {
+    right: 0;
+}
+#leftcol .tabs {
+    left: 0;
+}
+#leftcol .tabs label,
+#rightcol .tabs label {
+    display: block;
+    float: left;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddee0',GradientType=0 );
+    border-right: 1px solid #f3f3f3;
+    border-left: 1px solid #f3f3f3;
+    color: #f9f9f9;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    top: -1px;
+    width: 33.333%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #fff 0 1px 0;
+    z-index: 1;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+    background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background:-o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background:-ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+}
+.tabs input {
+    position: absolute;
+    left: -9999px;
+}
+#tabl_1:checked  ~ #tab_l1,
+#tabl_2:checked  ~ #tab_l2,
+#tabr_1:checked  ~ #tab_r1,
+#tabr_2:checked  ~ #tab_r2 {
+    top: -1px;
+    z-index: 3;
+    color: #222;
+    font-weight: bold;
+    background: -webkit-gradient(linear, center top, center bottom, from(#ccc), to(#ededed));
+    background-image: linear-gradient(#ccc, #ededed);
+    box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+#leftcol .tabs label[id="tab_l1"],
+#rightcol .tabs label[id="tab_r1"]{
+    -moz-border-radius: 0 0 8px 0;
+    -webkit-border-radius: 0 0 8px 0;
+    border-radius: 0 0 8px 0;
+}
+#leftcol .tabs label[id="tab0_l2"],
+#rightcol .tabs label[id="tab_r2"] {
+    -moz-border-radius: 0 0 0 8px;
+    -webkit-border-radius: 0 0 0 8px;
+    border-radius: 0 0 0 8px;
+}
+
+.tabs label:hover {
+    background: -webkit-gradient(linear, center top, center bottom, from(#ccc), to(#ededed));
+    background-image: linear-gradient(#ccc, #ededed);
+    box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+.tabs_cont {
+    background: #F5F5F5;
+    -moz-border-radius: 0 6px 6px 6px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    border-radius: 0px 0px 6px 6px;
+    padding: 15px 5px;
+    position: relative;
+    z-index: 3;
+    height: 300px;
+    overflow: auto;
+    left: 0px;
+    width: 100%;
+}
+.tabs_cont > div {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    opacity: 0;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+#leftcol #tabl_1:checked ~ .tabs_cont #tab_cl1,
+#leftcol #tabl_2:checked ~ .tabs_cont #tab_cl2,
+#rightcol #tabr_1:checked ~ .tabs_cont #tab_cr1,
+#rightcol #tabr_2:checked ~ .tabs_cont #tab_cr2  {
+    position: static;
+    left: 0;
+    opacity: 1;
+}
+
+
+
+
+

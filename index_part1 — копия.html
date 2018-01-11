@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <meta name="kyewords" content=""/>
+  <link rel="shortcut" href="favicon.png"/>
+  <title>Title</title>
+  
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/bootstrap-grid.css"/>
+  <link rel="stylesheet" href="fonts/fonts.css"/>
+  <link rel="stylesheet" href="fonts/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/slick.css"/>
+  <link rel="stylesheet" href="css/slick-theme.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/media.css"/>
+  <script src="js/modernizr/modernizr.js"></script>
+  <script>
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+});
+  </script>
+   <!--HTML5 shim and Respond.js IE8 of HTML5 elements  and media queries-->
+  <!--[lt IE9]>
+  <script src="https://oss.maxsdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxsdn.com/libs/respond.js/1.3.0/respond.minjs></script>
+  <![endif]-->
+</head>
+<body>
+<!--[if lt IE 9]>
+  <script src="libs/html5shiv/es5-shim.min.js"></script>
+  <script src="libs/html5shiv/html5shiv.min.js"></script>
+  <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+  <script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+
+
+<div class="container">
+<header id="header"></header>
+
+<section id="content">
+   <div class="row">
+        <div class="box-wrap">
+            <div class="box-slider">
+                    <div class="slider slider-for slick-initialized slick-slider ">
+                        <div aria-live="polite" class="slick-list draggable">
+                            <div class="slick-track" role="listbox">
+                                <div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide120">
+                                    <h3>байк</h3>
+                                    <p><img src="img/байк.jpg"   alt="байк"> </p>
+                                </div>
+                                <div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide121">
+                                    <h3>гепард</h3>
+                                    <p><img src="img/гепард.jpg" alt="гепард"></p>
+                                </div>
+                                <div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide122">
+                                    <h3>гепард</h3>
+                                    <p><img src="img/осень.jpg" alt="осень"></p>
+                                </div>
+                                <div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide123">
+                                    <h3>панда</h3>
+                                    <p><img src="img/панда.jpg" alt="панда"></p>
+                                </div>
+                                <div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide124">
+                                    <h3>череп</h3>
+                                    <p><img src="img/череп.jpg" alt="череп"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider slider-nav slick-initialized slick-slider slick-dotted" role="toolbar">
+                        <button type="button" date-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button">Previous</button>
+                        <div aria-live="polite" class="slick-list draggable">
+                           <div class="slick-track">
+                                <div  class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" role="option">
+                                    <p><img src="img/панда.jpg" alt="панда"></p>
+                                </div>
+                                <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide130>
+                                    <p><img src="img/байк.jpg"   alt="байк"> </p>
+                                </div>
+                                <div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide131">
+                                    <p><img src="img/байк.jpg"   alt="байк"> </p>
+                                </div>
+                                <div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide132">
+                                    <p><img src="img/гепард.jpg" alt="гепард"></p>
+                                </div>
+                                <div class="slick-slide slick-current slick-active slick-center" data-slick-index="2" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide133">
+                                    <p><img src="img/осень.jpg" alt="осень"></p>
+                                </div>
+                                <div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide134">
+                                    <p><img src="img/байк.jpg"   alt="байк"> </p>
+                                </div>
+                                <div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option">
+                                    <p><img src="img/байк.jpg"   alt="байк"> </p>
+                                </div>
+                                <div  class="slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1" role="option">
+                                    <p><img src="img/череп.jpg" alt="череп"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button">Next</button>
+                        <ul class="slick-dots" role="tablist">
+							<li class aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation130" id="navigation130">
+                                <button type="button" data-role="none" role="button" tabindex="0"></button>
+                            </li>
+                            <li aria-hidden="fals" role="presentation" aria-selected="fals" aria-controls="navigation131" id="navigation131">
+                                <button type="button" data-role="none" role="button" tabindex="0"></button>
+                            </li>
+                            <li aria-hidden="fals" role="presentation" aria-selected="fals" aria-controls="navigation132" id="navigation132">
+                                <button type="button" data-role="none" role="button" tabindex="0"></button>
+                            </li>
+                            <li aria-hidden="fals" role="presentation" aria-selected="fals" aria-controls="navigation133" id="navigation133">
+                                <button type="button" data-role="none" role="button" tabindex="0"></button>
+                            </li>
+                            <li aria-hidden="fals" role="presentation" aria-selected="fals" aria-controls="navigation134" id="navigation134">
+                                 <button type="button" data-role="none" role="button" tabindex="0"></button>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <div class="box-content">        
+		</div>
+    </div>
+</section>
+<footer id="footer"></footer>
+</div>
+<script src="js/jquery/jquery-1.11.2.min.js"></script>
+<script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick/slick.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
