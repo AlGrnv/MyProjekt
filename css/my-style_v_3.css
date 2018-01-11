@@ -373,9 +373,9 @@ label.btnb:after {
 .tabs-top label {
     display: block;
     float: left;
-	background: -webkit-linear-gradient(-90deg, rgba(249,249,249,1) 0, rgba(132,128,128,1) 54%, rgba(127,127,127,1) 61%, rgba(119,119,119,1) 100%);
-	background: -moz-linear-gradient(180deg, rgba(249,249,249,1) 0, rgba(132,128,128,1) 54%, rgba(127,127,127,1) 61%, rgba(119,119,119,1) 100%);
-	background: linear-gradient(180deg, rgba(249,249,249,1) 0, rgba(132,128,128,1) 54%, rgba(127,127,127,1) 61%, rgba(119,119,119,1) 100%);
+    background: -webkit-linear-gradient(-89.9637565321deg, rgba(191,191,191,1) 0, rgba(91,91,91,1) 31%, rgba(96,96,96,1) 68%, rgba(191,191,191,1) 100%);
+    background: -moz-linear-gradient(179.9637565321deg, rgba(191,191,191,1) 0, rgba(91,91,91,1) 31%, rgba(96,96,96,1) 68%, rgba(191,191,191,1) 100%);
+    background: linear-gradient(179.9637565321deg, rgba(191,191,191,1) 0, rgba(91,91,91,1) 31%, rgba(96,96,96,1) 68%, rgba(191,191,191,1) 100%);    border-left: 1px solid #ccc;
     border-left: 1px solid #ccc;
     color: #f5f5f5;
     cursor: pointer;
@@ -400,6 +400,9 @@ label.btnb:after {
 	background: -webkit-linear-gradient(-90deg, rgba(119,119,119,1) 0, rgba(127,127,127,1) 54%, rgba(132,132,132,1) 61%, rgba(249,249,249,1) 100%);
 	background: -moz-linear-gradient(180deg, rgba(122,122,122,1) 0, rgba(122,122,122,1) 54%, rgba(137,137,137,1) 61%, rgba(232,232,232,1) 100%);
 	background: linear-gradient(180deg, rgba(122,122,122,1) 0, rgba(122,122,122,1) 54%, rgba(137,137,137,1) 61%, rgba(232,232,232,1) 100%);
+    background: -webkit-linear-gradient(-89.9637565321deg, rgba(191,191,191,1) 0, rgba(91,91,91,1) 31%, rgba(96,96,96,1) 68%, rgba(191,191,191,1) 100%);
+    background: -moz-linear-gradient(179.9637565321deg, rgba(191,191,191,1) 0, rgba(91,91,91,1) 31%, rgba(96,96,96,1) 68%, rgba(191,191,191,1) 100%);
+    background: linear-gradient(179.9637565321deg, rgba(191,191,191,1) 0, rgba(91,91,91,1) 31%, rgba(96,96,96,1) 68%, rgba(191,191,191,1) 100%);    border-left: 1px solid #ccc;
     border-left: 1px solid #ccc;
     color: #f5f5f5;
     cursor: pointer;
@@ -513,17 +516,21 @@ label.btnb:after {
 
 .t-p-item-list,
 .b-p-item-list {
+    position: inherit;
     text-align: center;
+    list-style: none;
+    padding: 0 0;
+    margin: 0 0;
 }
 
 #tab_wt1 .t-p-i1,
 #tab-wb1 .b-p-i1 {
-    top: 7px;
-    list-style: none;
-    height: 128px;
-    padding: 0 0;
-    margin: 0 0;
+
+    /*height: 128px;*/
+
 }
+
+
 
 #tab_wt1 .t-p-i1 li,
 #tab-wb1 .b-p-i1 li {
@@ -534,6 +541,34 @@ label.btnb:after {
     list-style: none;
 
 }
+
+#tab_wt1 .t-p-i1 .item-link1 {
+    position: relative;
+    top: 3px;
+    padding: 22px 16px;
+    border: 1px solid rgba(91,91,91,1);
+    border-radius: 50%;
+}
+
+/*#tab_wt1 .t-p-i1 .item-link1 a {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+/*}*/
+
+#tab_wt1 .t-p-i1 .item-link2 {
+    position: relative;
+    top: 7px;
+}
+
+
+
+
+
+
+
+
+
+
 #tab_wt1 .t-p-i1 li:first-child,
 #tab-wb1 .b-p-i1 li:first-child {
    margin-left: 0;
